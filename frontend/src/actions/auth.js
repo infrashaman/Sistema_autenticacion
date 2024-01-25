@@ -78,6 +78,7 @@ export const googleAuthenticate = (state, code) => async dispatch => {
             dispatch({
                 type: GOOGLE_AUTH_FAIL
             });
+            console.log(err)
         }
     }
 };

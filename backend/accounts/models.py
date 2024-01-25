@@ -34,3 +34,6 @@ class UserAccount(AbstractBaseUser, PermissionsMixin):
     
     def __str__(self):
         return self.email
+    
+    id = models.BigAutoField(primary_key=True)
+
